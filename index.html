@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 LeetCode Grind 169 - Algorithm Tracker</title>
+    <link rel="icon" type="image/png" href="https://leetcode.com/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="main-title">
+                    <span class="emoji">🚀</span>
+                    LeetCode Grind 169
+                </h1>
+                <p class="subtitle">Master algorithms and data structures with this curated collection of 169 essential problems</p>
+            </div>
+            
+            <!-- Global Progress -->
+            <div class="global-progress">
+                <div class="progress-header">
+                    <span class="progress-label">Overall Progress</span>
+                    <span class="progress-stats">
+                        <span id="totalSolved">0</span> / <span id="totalProblems">169</span>
+                        <span class="progress-percentage">(<span id="overallPercentage">0</span>%)</span>
+                    </span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="overallProgressBar"></div>
+                </div>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">All Problems</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                    <button class="filter-btn" data-filter="pending">Pending</button>
+                </div>
+                <div class="difficulty-filters">
+                    <button class="difficulty-btn easy-btn active" data-difficulty="easy">🟢 Easy</button>
+                    <button class="difficulty-btn medium-btn active" data-difficulty="medium">🟡 Medium</button>
+                    <button class="difficulty-btn hard-btn active" data-difficulty="hard">🔴 Hard</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Topics Overview -->
+            <section class="topics-overview">
+                <h2 class="section-title">🗂 Topics Overview</h2>
+                <div class="topics-grid" id="topicsGrid"></div>
+            </section>
+
+            <!-- Problems by Topic -->
+            <section class="problems-section" id="problemsSection"></section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Based on <a href="https://www.techinterviewhandbook.org/grind75/" target="_blank">Tech Interview Handbook Grind 75</a></p>
+            <p>Last updated: <span id="lastUpdated"></span></p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
